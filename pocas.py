@@ -119,13 +119,13 @@ def main(args):
 
         # Get point from pupil
         if gaze.is_blinking():
-            yellocard = yellocard - 1
+            yellocard = yellocard + 1
             yellocard = notnegative(yellocard)
         elif gaze.is_right():
-            yellocard = yellocard - 1
+            yellocard = yellocard + 1
             yellocard = notnegative(yellocard)
         elif gaze.is_left():
-            yellocard = yellocard - 1
+            yellocard = yellocard + 1
             yellocard = notnegative(yellocard)
         elif gaze.is_center():
             yellocard = yellocard - 1
